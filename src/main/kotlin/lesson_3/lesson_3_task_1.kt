@@ -2,12 +2,14 @@ package org.example.lesson_3
 
 fun main() {
 
-    var message = "Good Day, Name!"
+    val userName = "Name"
+    var greeting = "Good day"
 
+    var message = "$greeting, $userName"
     println(message)
 
-    message = "Good Evening, Name!"
-
+    greeting = "Good evening"
+    message = "$greeting, $userName"
     println(message)
 
 }
