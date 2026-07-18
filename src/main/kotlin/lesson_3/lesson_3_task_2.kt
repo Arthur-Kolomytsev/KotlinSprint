@@ -7,11 +7,11 @@ fun main() {
     val middleName = "Sergeevna"
     var age = 20
 
-    println("$lastName $name $middleName, $age")
+    println("[$lastName $name $middleName, $age]")
 
     age = 22
     lastName = "Sidorova"
 
-    println("$lastName $name $middleName, $age")
+    println("[$lastName $name $middleName, $age]")
 
 }
