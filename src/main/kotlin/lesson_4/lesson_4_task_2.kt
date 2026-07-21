@@ -1,20 +1,23 @@
 package org.example.lesson_4
 
+const val MAX_WEIGHT = 100
+const val MIN_WEIGHT = 35
+const val MAX_VOLUME = 100
+
+
 fun main() {
 
-    val maxWeight = 35
-    val minWeight = 100
-    val maxVolume = 100
+    val firstCargoWeight = 20
+    val firstCargoVolume = 80
 
-    val weight_1 = 20
-    val volume_1 = 80
-
-    val weight_2 = 50
-    val volume_2 = 100
+    val secondCargoWeight = 50
+    val secondCargoVolume = 100
 
     println(
-        "Груз с весом $weight_1 кг и объемом $volume_1 л соответствует категории 'Average': ${weight_1 > minWeight && weight_1 <= maxWeight && volume_1 < maxVolume}\n" +
-                "Груз с весом $weight_2 кг и объемом $volume_2 л соответствует категории 'Average': ${weight_2 > minWeight && weight_2 <= maxWeight && volume_2 < maxVolume}"
+        "Груз с весом $firstCargoWeight кг и объемом $firstCargoVolume л соответствует категории 'Average':" +
+                "${firstCargoWeight > MIN_WEIGHT && firstCargoWeight <= MAX_WEIGHT && firstCargoVolume < MAX_VOLUME}\n" +
+                "Груз с весом $secondCargoWeight кг и объемом $secondCargoVolume л соответствует категории 'Average':" +
+                "${secondCargoWeight > MIN_WEIGHT && secondCargoWeight <= MAX_WEIGHT && secondCargoVolume < MAX_VOLUME}"
     )
 
 }
