@@ -1,14 +1,12 @@
 package org.example.lesson_4
 
+const val NUMBER_OF_TABLES = 13
 
 fun main() {
-
-    val numberOfTables = 13
 
     val todayBooked = 13
     val tomorrowBooked = 9
 
-    println("[Dostupno stolikov na segodnya: ${todayBooked < numberOfTables}]")
-    println("[Dostupno stolikov na zavtra: ${tomorrowBooked < numberOfTables}]")
+    println("[Доступность столиков на сегодня: ${todayBooked < NUMBER_OF_TABLES}]\n[Доступность столиков на завтра: ${tomorrowBooked < NUMBER_OF_TABLES}]")
 
 }
