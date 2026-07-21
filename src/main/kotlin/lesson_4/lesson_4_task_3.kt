@@ -7,14 +7,14 @@ fun main() {
     val isSunnyDay = true
     val isOpenTent = true
     val humidity = 20
-    val season = "Winter"
+    val season = "зима"
 
 
     println(
-        "Благоприятные ли условия сейчас для роста бобовых?${
+        "Благоприятные ли условия сейчас для роста бобовых? ${
             isSunnyDay && isOpenTent
                     && humidity == OPTIMAL_HUMIDITY
-                    && season != "Winter"
+                    && season != "зима"
         }"
     )
 }
