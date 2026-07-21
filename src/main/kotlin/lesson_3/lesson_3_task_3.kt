@@ -3,7 +3,6 @@ package org.example.lesson_3
 fun main() {
 
     val number = 6
-
     val result = """
             $number x 1 = ${number * 1}
             $number x 2 = ${number * 2}
