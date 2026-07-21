@@ -15,6 +15,7 @@ fun main() {
             $number x 9 = ${number * 9}
         """.trimIndent()
 
+
     println(result)
 
 }
