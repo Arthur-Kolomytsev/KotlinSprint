@@ -18,8 +18,8 @@ fun main() {
     val input4 = readln()
     val isWeather = input4.toBoolean()
 
-    val isSailingCondition1 = !isDamage && (crewMembers in 55..70) && (provision > 50) && isWeather
-    val isSailingCondition2 = (crewMembers == 70) && (provision >= 50)
+    val isSailingCondition1 = !isDamage && (crewMembers in 55..70) && (provision > 50)
+    val isSailingCondition2 = (crewMembers == 70) && (provision >= 50) && isWeather
 
     val isSailing = isSailingCondition1 || isSailingCondition2
 
