@@ -23,5 +23,7 @@ fun main() {
     else if (isOneNumbersMatched) println("Вы выиграли утешительный приз!")
     else println("Неудача!")
 
+    println("Счачтливые числа: $LUCKY_NUMBER_TWO и $LUCKY_NUMBER_TWO")
+
 
 }
