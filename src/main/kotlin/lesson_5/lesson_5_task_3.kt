@@ -13,7 +13,7 @@ fun main() {
     val numberTwo = readln().toInt()
 
     val isTwoNumbersMatched =
-        (numberOne == LUCKY_NUMBER_ONE || numberOne == LUCKY_NUMBER_TWO) && (numberTwo == LUCKY_NUMBER_ONE || numberTwo == LUCKY_NUMBER_TWO)
+        (numberOne == LUCKY_NUMBER_ONE || numberOne == LUCKY_NUMBER_TWO) && (numberTwo == LUCKY_NUMBER_ONE || numberTwo == LUCKY_NUMBER_TWO) && (numberOne != numberTwo)
 
     val isOneNumbersMatched =
         (numberOne == LUCKY_NUMBER_ONE || numberOne == LUCKY_NUMBER_TWO) || (numberTwo == LUCKY_NUMBER_ONE || numberTwo == LUCKY_NUMBER_TWO)
@@ -23,7 +23,7 @@ fun main() {
     else if (isOneNumbersMatched) println("Вы выиграли утешительный приз!")
     else println("Неудача!")
 
-    println("Счачтливые числа: $LUCKY_NUMBER_TWO и $LUCKY_NUMBER_TWO")
+    println("Счачтливые числа: $LUCKY_NUMBER_ONE и $LUCKY_NUMBER_TWO")
 
 
 }
