@@ -3,16 +3,19 @@ package org.example.lesson_5
 
 fun main() {
 
-    var name = "Zaphod"
-    var password = "PanGalactic"
+    val name = "Zaphod"
+    val password = "PanGalactic"
 
-    print("Что ж, введи, пожалуйста, свое имя пользователя, чтобы мы могли приступить к процессу входа: ")
+    print("Что ж, введи, пожалуйста, свое имя пользователя: ")
     val userName = readln()
 
     if (userName == name) {
-        print("Введите ваш пароль: ")
+        print("Пожалуйста, вводите свои данные: ")
         val userPassword = readln()
-        if (userPassword == password) println("Ваши данные проверены, и о, чудо, они верны... Пользователь \"$name\", вам разрешено входить на борт корабля \"Heart of Gold\"")
+        if (userPassword == password) println("Вздыхает... Ваши данные проверены, и о, чудо, они верны..." +
+                "Пользователь \"Zaphod\", вам разрешено входить на борт корабля \"Heart of Gold\"." +
+                "Хотя мне всё равно... Ну вперед, войдите... Если вам так уж надо, в конце концов..." +
+                "Меланхолический вздох. Надеюсь, вам понравится пребывание здесь больше, чем мне.")
         else println("Неверный пароль!")
     } else println("Пожалуйста зарегистрируйтесь")
 
