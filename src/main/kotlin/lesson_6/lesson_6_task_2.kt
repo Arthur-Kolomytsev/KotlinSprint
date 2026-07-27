@@ -4,11 +4,12 @@ fun main() {
 
     print("Введите количество секунд: ")
     var seconds = readln().toInt()
+    val ammountOfSeconds = seconds
 
     while (seconds > 0) {
         Thread.sleep(1000)
         seconds--
     }
 
-    println("Прошло $seconds секунд")
+    println("Прошло $ammountOfSeconds секунд")
 }
