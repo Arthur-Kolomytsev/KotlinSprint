@@ -4,7 +4,7 @@ import kotlin.random.Random
 
 fun main() {
 
-    val luckyNumber = Random.nextInt(10)
+    val luckyNumber = Random.nextInt(1,10)
 
     var attempt = 5
 
@@ -13,12 +13,14 @@ fun main() {
         val userNumber = readln().toInt()
         if (userNumber == luckyNumber) {
             println("Это была великолепная игра!")
-            break
+            return
         } else {
             println("Не угадал")
             println("Оставшееся количесвто попыток: ${--attempt}")
         }
     } while (attempt > 0)
+
+    println("Было загадано число $luckyNumber")
 
 }
 
