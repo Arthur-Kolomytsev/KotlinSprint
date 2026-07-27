@@ -10,7 +10,7 @@ fun main() {
     var password = ""
 
 
-    for (i in 0..3) {
+    for (i in 0..2) {
         password += chars[Random.nextInt(chars.length)]
         password += numbers[Random.nextInt(numbers.length)]
     }
