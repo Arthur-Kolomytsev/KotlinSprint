@@ -28,11 +28,13 @@ fun main() {
 
     val commonList = luckyRandomNumbersList.intersect(userNumbersList).toList()
 
+    val sizeOfCommonList = commonList.size
+
     when {
-        (commonList.size == 3) -> println("Вы угадали все три числа и выигпываете джекпот!")
-        (commonList.size == 2) -> println("Вы угадали два числа и получаете крупный приз!")
-        (commonList.size == 1) -> println("Вы угадали одно число и получаете утешительный приз")
-        (commonList.size == 0) -> println("Вы не угадали ни одного числа.")
+        (sizeOfCommonList == 3) -> println("Вы угадали все три числа и выигпываете джекпот!")
+        (sizeOfCommonList == 2) -> println("Вы угадали два числа и получаете крупный приз!")
+        (sizeOfCommonList == 1) -> println("Вы угадали одно число и получаете утешительный приз")
+        (sizeOfCommonList == 0) -> println("Вы не угадали ни одного числа.")
     }
 
     println(luckyRandomNumbersList)
