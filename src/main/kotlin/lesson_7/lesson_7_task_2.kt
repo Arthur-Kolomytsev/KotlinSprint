@@ -5,10 +5,7 @@ import kotlin.random.Random
 fun main() {
 
     do {
-        var authorizationCode = ""
-        repeat (4) {
-            authorizationCode += Random.nextInt(0, 10)
-        }
+        val authorizationCode = Random.nextInt(1000, 10000).toString()
         println("Ваш код авторизации: $authorizationCode")
         print("Введите код авторизации: ")
         val userCode = readln()
@@ -16,7 +13,6 @@ fun main() {
             println("Добро пожаловать!")
             break
         }
-
     } while (true)
 
 }
