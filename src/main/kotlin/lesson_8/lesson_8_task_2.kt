@@ -4,15 +4,20 @@ fun main() {
 
     val arrayOgIngredients = arrayOf("Помидор", "Лук", "Перец", "Яйца")
 
+    print("Введите ингредиент: ")
+    val userIngredient = readln()
 
-    for (ingredient in arrayOgIngredients) {
-        print("Введите ингредиент: ")
-        val userIngredient = readln()
-        if (ingredient == userIngredient) {
-            println("Ингредиент $ingredient в рецепте есть")
-        } else {
-            println("Такого ингредиента в рецепте нет")
+    var found = false
+
+    for (i in arrayOgIngredients.indices) {
+        if (arrayOgIngredients[i] == userIngredient) {
+            found = true
+            break
         }
     }
-
+    if (found) {
+        println("Ингредиент $userIngredient в рецепте есть")
+    } else {
+        println("Такого ингредиента в рецепте нет")
+    }
 }
