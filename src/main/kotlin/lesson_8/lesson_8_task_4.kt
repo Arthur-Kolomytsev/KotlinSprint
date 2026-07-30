@@ -13,8 +13,7 @@ fun main() {
         print("Какой ингредиент вы хотите добавить?")
         val newIngr = readln()
         arrayOgIngredients[arrayOgIngredients.indexOf(oldIngr)] = newIngr
+        println("Готово! Вы сохранили следующий список: ${arrayOgIngredients.contentToString()}")
     } else println("Такого ингредиента в рецепте нет")
-
-    println("Готово! Вы сохранили следующий список: ${arrayOgIngredients.contentToString()}")
 
 }
