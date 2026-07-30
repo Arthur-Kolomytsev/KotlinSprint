@@ -4,13 +4,13 @@ fun main() {
 
     val arrayOgIngredients = arrayOf("Помидор", "Лук", "Перец", "Яйца")
 
-    print("Введите ингредиент: ")
+    print("Какой ингредиент вы хотите найти? ")
     val userIngredient = readln()
 
     val found = arrayOgIngredients.contains(userIngredient)
 
     if (found) {
-        println("Ингредиент $userIngredient в рецепте есть")
+        println("Этот ингредиент в рецепте есть")
     } else {
         println("Такого ингредиента в рецепте нет")
     }
