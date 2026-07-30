@@ -2,7 +2,7 @@ package org.example.lesson_8
 
 fun main() {
 
-    val arrayOgIngredients = arrayOf("Помидор", "Лук", "Перец", "Яйца")
+    val arrayOgIngredients = arrayOf("яйцо", "помидор", "зелень", "соль", "перец")
 
     println("Какой ингредиент вы хотите найти?")
     val userIngredient = readln()
