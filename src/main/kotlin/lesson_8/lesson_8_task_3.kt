@@ -2,9 +2,9 @@ package org.example.lesson_8
 
 fun main() {
 
-    val arrayOgIngredients = arrayOf("яйцо", "помидор", "зелень", "соль", "перец")
+    val arrayOgIngredients = arrayOf("Помидор", "Лук", "Перец", "Яйца")
 
-    println("Какой ингредиент вы хотите найти?")
+    println("Какой ингредидиент вы хотите найти?")
     val userIngredient = readln()
 
     val found = arrayOgIngredients.contains(userIngredient)
