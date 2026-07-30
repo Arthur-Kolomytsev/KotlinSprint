@@ -4,7 +4,7 @@ fun main() {
 
     val arrayOgIngredients = arrayOf("Помидор", "Лук", "Перец", "Яйца")
 
-    print("Какой ингредиент вы хотите найти? ")
+    println("Какой ингредиент вы хотите найти?")
     val userIngredient = readln()
 
     val found = arrayOgIngredients.contains(userIngredient)
