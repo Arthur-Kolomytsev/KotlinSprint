@@ -9,7 +9,7 @@ fun main() {
     println("Желаете добавить еще?")
     val userAnswer = readln()
 
-    if (userAnswer.equals("yes", ignoreCase = true)) {
+    if (userAnswer.equals("да", ignoreCase = true)) {
         print("Какой ингредиент вы хотите добавить?")
         val userIngr = readln()
         ingredients.add(userIngr)
