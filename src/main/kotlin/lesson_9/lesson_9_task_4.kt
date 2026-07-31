@@ -5,6 +5,7 @@ fun main() {
     print("Введите ингредиенты: ")
     val userIngr = readln()
 
+
     val ingr = userIngr.split(",")
     val sortedIngr = ingr.sorted()
 
