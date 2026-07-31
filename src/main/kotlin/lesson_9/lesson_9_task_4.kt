@@ -6,7 +6,7 @@ fun main() {
     val userIngr = readln()
 
 
-    val ingr = userIngr.split(",")
+    val ingr = userIngr.split(", ")
     val sortedIngr = ingr.sorted()
 
     println(sortedIngr)
