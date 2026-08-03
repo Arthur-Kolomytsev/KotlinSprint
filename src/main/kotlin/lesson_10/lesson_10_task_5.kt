@@ -7,26 +7,20 @@ const val PASSWORD = "123456"
 
 fun main() {
 
-    println(checkAuthorization("Artur", "123456"))
-
-    print("Enter login: ")
-    val userLogin = readln()
-
-    print("Enter password: ")
-    val userPassword = readln()
-
+    val userLogin = "Artur"
+    val userPassword = "123456"
     val token = checkAuthorization(userLogin, userPassword)
 
+
     if (token != null) {
-        println(getProducts(token))
+        println(getProducts())
     } else {
-        println("User not found")
+        println("Пользователь не зарегистрирован")
     }
 
 }
 
 
-var validToken: String? = null
 
 fun checkAuthorization(login: String, password: String): String? {
 
@@ -36,18 +30,14 @@ fun checkAuthorization(login: String, password: String): String? {
         repeat(32) {
             token.append(listOfsymbols.random())
         }
-        validToken = token.toString()
-        return validToken
+        return token.toString()
     } else return null
 
 }
 
 
-fun getProducts(token: String): List<String>? {
-    if (token != validToken) {
-        return null
-    } else return listOf("p1", "p2", "p3")
-}
+fun getProducts(): List<String> = listOf("p1", "p2", "p3")
+
 
 
 
