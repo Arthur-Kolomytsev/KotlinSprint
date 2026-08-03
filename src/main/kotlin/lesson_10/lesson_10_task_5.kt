@@ -11,15 +11,11 @@ fun main() {
     val userPassword = "123456"
     val token = checkAuthorization(userLogin, userPassword)
 
+    if (getProducts(token) == null) println("Пользователь не зарегистрирован")
+    else println(getProducts(token))
 
-    if (token != null) {
-        println(getProducts())
-    } else {
-        println("Пользователь не зарегистрирован")
-    }
 
 }
-
 
 
 fun checkAuthorization(login: String, password: String): String? {
@@ -36,7 +32,14 @@ fun checkAuthorization(login: String, password: String): String? {
 }
 
 
-fun getProducts(): List<String> = listOf("p1", "p2", "p3")
+fun getProducts(token: String?): List<String>? {
+    if (token != null) {
+        return listOf("Помидоры", "Соль", "Огурцы")
+    } else return null
+}
+
+
+
 
 
 
