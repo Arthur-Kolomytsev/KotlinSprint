@@ -10,7 +10,7 @@ fun main() {
     var isGame = true
 
     while (isGame) {
-        print("Хотите бросить кости еще раз? Введите Да или Нет.")
+        print("Хотите бросить кости еще раз? Введите Да или Нет")
         val answer = readln()
 
         if (answer == "Да") {
