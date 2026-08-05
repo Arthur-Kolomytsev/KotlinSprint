@@ -7,8 +7,7 @@ class RecipeCategory(
     val description: String,
     val isFavourites: Boolean = false,
     val imageUrl: String,
-    val listOfIngredients: MutableList<Recipe>,
-
+    val listOfIngredients: List<Recipe>,
 
 
 ) {
