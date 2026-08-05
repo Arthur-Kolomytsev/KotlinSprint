@@ -1,5 +1,8 @@
 package org.example.lesson_11_task_4
 
-class Ingredient {
+class Ingredient(
+    val name: String,
+    val amount: String,
+) {
 
 }
