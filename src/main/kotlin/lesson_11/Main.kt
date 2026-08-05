@@ -8,13 +8,13 @@ fun main() {
     println("user1 id: ${user1.id}\n" +
             "user1 login: ${user1.login}\n" +
             "user1 password: ${user1.password}\n" +
-            "user1 password: ${user1.email}")
+            "user1 email: ${user1.email}")
 
     println()
 
     println("user2 id: ${user2.id}\n" +
             "user2 login: ${user2.login}\n" +
             "user2 password: ${user2.password}\n" +
-            "user2 password: ${user2.email}")
+            "user2 email: ${user2.email}")
 
 }
