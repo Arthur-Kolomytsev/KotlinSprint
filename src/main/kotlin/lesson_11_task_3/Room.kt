@@ -13,7 +13,7 @@ class Room(
     }
 
     fun updateUserStatus(name: String, s: String){
-        listOfUsers.find { it.name == name }
+        listOfUsers.find { it.name == name }?.updateStatus(s)
     }
 
 
