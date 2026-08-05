@@ -4,7 +4,7 @@ package org.example.lesson_11_task_3
 class Room(
     val cover: String,
     val title: String,
-    var listOfUsers: List<User> = mutableListOf(),
+    val listOfUsers: MutableList<User>,
 
     ) {
 
@@ -19,7 +19,6 @@ class Room(
             }
         }
     }
-
 
 
 }

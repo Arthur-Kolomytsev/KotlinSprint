@@ -2,13 +2,13 @@ package org.example.lesson_11_task_3
 
 class User(
     val name: String,
-    var staus: String = ""
+    val avatar: String,
+    var status: String = ""
 ) {
 
     fun updateStatus(s: String) {
-        staus = s
+        status = s
     }
-
 
 
 }
