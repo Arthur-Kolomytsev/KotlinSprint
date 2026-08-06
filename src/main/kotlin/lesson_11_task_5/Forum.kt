@@ -1,8 +1,8 @@
 package org.example.lesson_11_task_5
 
 class Forum {
-    val users = mutableListOf<User>()
-    val messages = mutableListOf<Message>()
+    private val users = mutableListOf<User>()
+    private val messages = mutableListOf<Message>()
     private var userId = 1
 
 
