@@ -6,10 +6,10 @@ class WeatherKK(dayTempK: Int, nightTempK: Int, isRainParam: Boolean) {
     val nightTemp = (nightTempK - 273.15).toInt()
     val isRain = isRainParam
 
-    init {
-        println("dayTemp: $dayTemp")
-        println("nightTemp: $nightTemp")
-        println("isRain: $isRain")
-    }
+//    init {
+//        println("dayTemp: $dayTemp")
+//        println("nightTemp: $nightTemp")
+//        println("isRain: $isRain")
+//    }
 
 }
