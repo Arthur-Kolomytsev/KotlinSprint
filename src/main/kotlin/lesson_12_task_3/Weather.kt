@@ -1,11 +1,10 @@
 package org.example.lesson_12_task_3
 
-class Weather(dayTempK: Int, nightTempK: Int, isRain: Boolean) {
+class WeatherK(dayTempK: Int, nightTempK: Int, isRain: Boolean) {
 
-    var dayTemp = (dayTempK - 273.15).toInt()
-    var nightTemp = (nightTempK - 273.15).toInt()
+    val dayTemp = (dayTempK - 273.15).toInt()
+    val nightTemp = (nightTempK - 273.15).toInt()
     var isRain = isRain
-
 
 
     fun showForecast() {
@@ -16,3 +15,4 @@ class Weather(dayTempK: Int, nightTempK: Int, isRain: Boolean) {
     }
 
 }
+
