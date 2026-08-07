@@ -17,10 +17,10 @@ fun main() {
 
     val listDayTemp = listWeatherK.map { it.dayTemp }
     val listNightTemp = listWeatherK.map { it.nightTemp }
-    val listIsRain = listWeatherK.map { it.isRain }
 
     println("Average day temperature: ${listDayTemp.average().toInt()}")
     println("Average night temperature: ${listNightTemp.average().toInt()}")
-    println("Raining days: ${listIsRain.count { it }}")
+    println("Raining days: ${listWeatherK.count { it.isRain }}")
+
 
 }
