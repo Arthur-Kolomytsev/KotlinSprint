@@ -4,7 +4,7 @@ fun main() {
 
     val phoneBook = PhoneBook2(
         name = "Anna",
-        phoneNumber = 12345678,
+        phoneNumber = 12345678L,
         company = null)
 
     phoneBook.printContact()
