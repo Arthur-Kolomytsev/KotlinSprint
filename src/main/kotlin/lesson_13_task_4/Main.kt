@@ -2,11 +2,20 @@ package org.example.lesson_13_task_4
 
 fun main() {
 
-    val contact1 = addContact(name = "Anna", phoneNumber = 11, company = "company-1")
-    val contact2 = addContact(name = "Bob", phoneNumber = null, company = "company-2")
-    val contact3 = addContact(name = "Tom", phoneNumber = 13, company = null)
+    val contacts = mutableListOf<Contact>()
 
-    val contacts = listOf<Contact?>(contact1, contact2, contact3)
+    print("Enter user name: ")
+    val userName = readln()
+    print("Enter a phone number: ")
+    val userPhoneNumber = readln().toLongOrNull()
+    print("Enter a name of company: ")
+    val userCompany = readln()
+
+    val contact1 = addContact(userName, userPhoneNumber, userCompany)
+
+    if (contact1 != null) {
+        contacts.add(contact1)
+    }
 
     contacts.forEach {
         println(it)
@@ -20,6 +29,5 @@ fun addContact(name: String, phoneNumber: Long?, company: String? = null): Conta
         println("Добавьте номер телефона для контакта $name")
         return null
     }
-
     return Contact(name, phoneNumber, company)
 }
