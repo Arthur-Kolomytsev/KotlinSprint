@@ -6,10 +6,14 @@ fun main() {
 
     print("Enter user name: ")
     val userName = readln()
+
     print("Enter a phone number: ")
     val userPhoneNumber = readln().toLongOrNull()
+
     print("Enter a name of company: ")
-    val userCompany = readln()
+    val input = readln()
+    val userCompany = if (input.isBlank()) null else input
+
 
     val contact1 = addContact(userName, userPhoneNumber, userCompany)
 
