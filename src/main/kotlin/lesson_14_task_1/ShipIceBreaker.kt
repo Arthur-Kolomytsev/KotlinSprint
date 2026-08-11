@@ -2,11 +2,12 @@ package org.example.lesson_14_task_1
 
 class ShipIceBreaker(
 
-    name: String,
-    speed: Int,
-    capacity: Int
+    override val name: String = "IceBreaker",
+    override val speed: Int = 2,
+    override val loadCapacity: Int = 300,
+    passengerCapacity: Int,
 
-) : Ship(name, speed, capacity) {
+) : Ship(name, speed, loadCapacity, passengerCapacity) {
 
     fun breakIce() {
         println("Break the ICE")
