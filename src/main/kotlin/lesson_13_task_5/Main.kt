@@ -12,7 +12,4 @@ fun main() {
         println(e.javaClass.simpleName)
     }
 
-    print("Enter a company name: ")
-    val userCompanyName = readln()
-
 }
