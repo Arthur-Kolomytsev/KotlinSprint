@@ -5,7 +5,7 @@ class ShipIceBreaker(
     override val name: String = "IceBreaker",
     override val speed: Int = 2,
     override val loadCapacity: Int = 300,
-    passengerCapacity: Int,
+    passengerCapacity: Int = 20,
 
 ) : Ship(name, speed, loadCapacity, passengerCapacity) {
 
