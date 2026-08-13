@@ -13,14 +13,7 @@ class ShipIceBreaker2(
     }
 
     override fun load() {
-        println("Open the gates on the stern side")
+        println("Open the gates on the stern side\n")
     }
 
-    override fun showShipInfo() {
-        println("Name: $name\n" +
-                "Speed: $speed\n" +
-                "Passenger Capacity: $passengerCapacity\n" +
-                "Cargo Capacity: $cargoCapacity")
-        println()
-    }
 }

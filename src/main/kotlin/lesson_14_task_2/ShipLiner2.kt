@@ -9,15 +9,7 @@ class ShipLiner2(
     ) : Ship2() {
 
     override fun load() {
-        println("Extends a horizontal gangway from the waist")
-    }
-
-    override fun showShipInfo() {
-        println("Name: $name\n" +
-                "Speed: $speed\n" +
-                "Passenger Capacity: $passengerCapacity\n" +
-                "Cargo Capacity: $cargoCapacity")
-        println()
+        println("Extends a horizontal gangway from the waist\n")
     }
 }
 

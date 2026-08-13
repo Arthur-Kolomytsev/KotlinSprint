@@ -9,15 +9,8 @@ class ShipCargo2(
     ) : Ship2() {
 
     override fun load() {
-        println("Activates the loading crane")
+        println("Activates the loading crane\n")
     }
 
-    override fun showShipInfo() {
-        println("Name: $name\n" +
-                "Speed: $speed\n" +
-                "Passenger Capacity: $passengerCapacity\n" +
-                "Cargo Capacity: $cargoCapacity")
-        println()
-    }
 }
 

@@ -7,7 +7,12 @@ fun main() {
     val ship3 = ShipCargo2()
 
     ship1.showShipInfo()
+    ship1.load()
+
     ship2.showShipInfo()
+    ship2.load()
+
     ship3.showShipInfo()
+    ship3.load()
 
 }
