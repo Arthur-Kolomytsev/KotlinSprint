@@ -15,11 +15,11 @@ fun main() {
     )
 
     val blackPerimeterSum = figures
-        .filter { it.color == "Black" }
+        .filter { it.color == BLACK }
         .sumOf { it.calculatePerimeter() }
 
     val whiteAreaSum = figures
-        .filter { it.color == "White" }
+        .filter { it.color == WHITE }
         .sumOf { it.calculateField() }
 
     println(blackPerimeterSum)
