@@ -1,17 +1,17 @@
 package org.example.lesson_14_task_3
 
 class Circle(
-    val radius: Int,
+    val radius: Double,
     override val color: String,
 
 ) : Figure(color) {
 
-    override fun calculateField(): Int {
-        return (radius * radius * PI).toInt()
+    override fun calculateField(): Double {
+        return radius * radius * PI
     }
 
 
-    override fun calculatePerimeter(): Int {
-        return (2 * radius * PI).toInt()
+    override fun calculatePerimeter(): Double {
+        return 2 * radius * PI
     }
 }

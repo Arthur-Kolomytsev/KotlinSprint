@@ -1,19 +1,19 @@
 package org.example.lesson_14_task_3
 
 class Rectangle(
-    val width: Int,
-    val hight: Int,
+    val width: Double,
+    val height: Double,
     override val color: String,
 
     ) : Figure(color) {
 
-    override fun calculateField(): Int {
-        return width * hight
+    override fun calculateField(): Double {
+        return width * height
     }
 
 
-    override fun calculatePerimeter(): Int {
-        return 2 * (width + hight)
+    override fun calculatePerimeter(): Double {
+        return 2 * (width + height)
     }
 
 

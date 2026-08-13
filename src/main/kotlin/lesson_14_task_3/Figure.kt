@@ -4,6 +4,6 @@ const val PI: Double = 3.14
 
 abstract class Figure(open val color: String) {
 
-    abstract fun calculateField(): Int
-    abstract fun calculatePerimeter(): Int
+    abstract fun calculateField(): Double
+    abstract fun calculatePerimeter(): Double
 }
