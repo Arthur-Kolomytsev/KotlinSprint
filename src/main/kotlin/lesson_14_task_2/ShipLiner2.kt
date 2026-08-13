@@ -1,7 +1,6 @@
 package org.example.lesson_14_task_2
 
 class ShipLiner2(
-
     override val name: String = "Liner",
     override val speed: Int = 10,
     override val passengerCapacity: Int = 50,
@@ -20,7 +19,6 @@ class ShipLiner2(
                 "Cargo Capacity: $cargoCapacity")
         println()
     }
-
 }
 
 
