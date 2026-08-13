@@ -8,6 +8,6 @@ class ChildMessage(
 ) : Message(id, text, author) {
 
     override fun toString(): String {
-        return "$author: $text"
+        return "$id, $author: $text"
     }
 }

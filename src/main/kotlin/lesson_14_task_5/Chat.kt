@@ -19,8 +19,8 @@ class Chat() {
         val grouped = messages.groupBy { if (it is ChildMessage) it.parentMessageId else it.id }
         for (group in grouped.values) {
             for (m in group) {
-                if (m is ChildMessage) println("\t" + m.text)
-                else println(m.text)
+                if (m is ChildMessage) println("\t" + m)
+                else println(m)
             }
         }
     }

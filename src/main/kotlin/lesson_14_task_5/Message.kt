@@ -6,6 +6,6 @@ open class Message(
     val author: String,
 ) {
     override fun toString(): String {
-        return "$author: $text"
+        return "$id, $author: $text"
     }
 }
