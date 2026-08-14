@@ -11,5 +11,4 @@ fun main() {
 
     user.read()
     user.write()
-
 }
