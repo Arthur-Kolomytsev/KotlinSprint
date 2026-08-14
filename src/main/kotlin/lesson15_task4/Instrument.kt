@@ -1,9 +1,11 @@
 package org.example.lesson15_task4
 
 class Instrument(
-    name: String
-) : Product(name), Searchable {
+    name: String,
+    stock: Int
+) : Product(name, stock), Searchable {
+
     override fun search() {
-        println("Searching process")
+        println("Выполняется поиск")
     }
 }
