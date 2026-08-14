@@ -6,6 +6,7 @@ open class Car(
 ) : Moveable, PassengerTransporter {
 
     override var currPassengers = 0
+    override var maxPassengers = 3
 
     override fun move() {
         println("$name is moving")
