@@ -2,7 +2,7 @@ package org.example.lesson15_task5
 
 interface CargoTransporter {
     var currCargo: Int
-    var maxCargo: Int
+    val maxCargo: Int
 
     fun loadCargo(i: Int) {
         if (currCargo + i > maxCargo) currCargo = maxCargo

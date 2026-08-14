@@ -2,7 +2,7 @@ package org.example.lesson15_task5
 
 interface PassengerTransporter {
     var currPassengers: Int
-    var maxPassengers: Int
+    val maxPassengers: Int
 
     fun loadPassenger(i: Int) {
         if (currPassengers + i > maxPassengers) currPassengers = maxPassengers
