@@ -11,4 +11,6 @@ fun main() {
 
     user.read()
     user.write()
+
+    admin.deleteUser(user)
 }

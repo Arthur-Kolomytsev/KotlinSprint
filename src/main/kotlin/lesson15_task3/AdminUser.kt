@@ -8,6 +8,6 @@ class AdminUser(
     }
 
     override fun deleteUser(u: User) {
-        println("$name deleted the ${u.name} user")
+        println("$name deleted user: ${u.name}")
     }
 }
