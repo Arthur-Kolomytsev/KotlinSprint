@@ -5,11 +5,12 @@ interface PassengerTransporter {
     var maxPassengers: Int
 
     fun loadPassenger(i: Int) {
-        if (i > maxPassengers) currPassengers = maxPassengers
+        if (i > maxPassengers || (currPassengers + i) > currPassengers) currPassengers = maxPassengers
         else currPassengers += i
     }
 
     fun unloadPassenger(i: Int) {
+        if ((currPassengers - i) < 0) currPassengers = 0
         currPassengers -= i
     }
 

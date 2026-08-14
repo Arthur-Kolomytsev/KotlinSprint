@@ -7,14 +7,16 @@ fun main() {
     val car2 = PassengerCar(name = "Car-2")
 
 
-    truck.loadPassenger(2)
-    truck.loadCargo(2)
+    truck.loadPassenger(1)
     truck.transportPassengers()
+
+    truck.loadCargo(2)
     truck.transportCargo()
 
     car1.loadPassenger(2)
-    car2.loadPassenger(3)
     car1.transportPassengers()
+
+    car2.loadPassenger(3)
     car2.transportPassengers()
 
 }
