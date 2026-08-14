@@ -7,7 +7,7 @@ fun main() {
 
     admin.read()
     admin.write()
-    admin.delete()
+    admin.deleteMessage()
 
     user.read()
     user.write()
