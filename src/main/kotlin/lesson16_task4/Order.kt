@@ -5,14 +5,11 @@ class Order(
     private var isReady: Boolean,
 ) {
 
-    private fun changeStatus(): Boolean {
-        if (isReady) {
-            return false
-        }
-        else return true
+    private fun changeStatus(status: Boolean) {
+        isReady = status
     }
 
     fun sendOrder(status: Boolean) {
-        isReady = changeStatus()
+        changeStatus(status)
     }
 }
