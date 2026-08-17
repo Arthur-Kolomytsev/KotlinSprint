@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson16_task5
 
 class Player(
     private val name: String,
