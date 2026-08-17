@@ -14,10 +14,10 @@ fun main() {
     val userLogin = readln()
     val userPassword = readln()
 
-    val user1 = User(login = userLogin, password = userPassword)
+    val user = User(login = userLogin, password = userPassword)
 
     val input = readln()
 
-    println(user1.validatePassword(input))
+    println(user.validatePassword(input))
 
 }
