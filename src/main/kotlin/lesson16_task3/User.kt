@@ -1,6 +1,5 @@
 package org.example.lesson16_task3
 
-import kotlin.random.Random
 
 class User(private val login: String, private val password: String) {
 
@@ -11,10 +10,13 @@ class User(private val login: String, private val password: String) {
 
 fun main() {
 
-    val password = readln()
+
+    val password = "12345"
 
     val user1 = User(login = "user-1", password = password)
 
-    println(user1.validatePassword(password))
+    val input = readln()
+
+    println(user1.validatePassword(input))
 
 }
