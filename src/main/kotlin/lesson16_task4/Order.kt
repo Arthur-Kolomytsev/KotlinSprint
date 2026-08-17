@@ -1,18 +1,18 @@
 package org.example.lesson16_task4
 
 class Order(
-    private var number: Int,
+    private val number: Int,
     private var isReady: Boolean,
 ) {
 
-    private fun changeStatus() {
+    private fun changeStatus(): Boolean {
         if (isReady) {
-            isReady = false
+            return false
         }
-        else isReady = true
+        else return true
     }
 
     fun sendOrder(status: Boolean) {
-        changeStatus()
+        isReady = changeStatus()
     }
 }
