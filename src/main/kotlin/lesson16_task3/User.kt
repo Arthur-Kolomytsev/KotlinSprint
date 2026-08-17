@@ -11,9 +11,10 @@ class User(private val login: String, private val password: String) {
 fun main() {
 
 
-    val password = "12345"
+    val userLogin = readln()
+    val userPassword = readln()
 
-    val user1 = User(login = "user-1", password = password)
+    val user1 = User(login = userLogin, password = userPassword)
 
     val input = readln()
 
