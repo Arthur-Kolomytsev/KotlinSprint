@@ -1,15 +1,22 @@
 package org.example.lesson16_task3
 
-class User(private val login: String) {
+import kotlin.random.Random
 
-    private val password = "1234"
+class User(
+    private val login: String,
+    private val password: Int,
+    ) {
 
-    fun validatePassword(input: String): Boolean = input == password
+    fun validatePassword(input: Int): Boolean = input == password
 
 }
 
 fun main() {
-    val u1 = User(login = "user-1")
-    println(u1.validatePassword("1234"))
+
+    val password = Random.nextInt()
+
+    val u1 = User(login = "user-1", password = password)
+
+    println(u1.validatePassword(password))
 
 }
