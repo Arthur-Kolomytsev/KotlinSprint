@@ -6,7 +6,7 @@ import kotlin.random.Random
 class Dice {
     private val randomNumber = Random.nextInt(1, 7)
 
-    fun getNumber() {
+    fun printNumber() {
         println(randomNumber)
     }
 
@@ -15,6 +15,6 @@ class Dice {
 
 fun main() {
 
-    Dice().getNumber()
+    Dice().printNumber()
 
 }
