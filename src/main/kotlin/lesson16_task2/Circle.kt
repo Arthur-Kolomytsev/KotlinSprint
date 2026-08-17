@@ -4,18 +4,18 @@ class Circle(private val radius: Double) {
 
     private val pi = 3.14
 
-    var length = 0.0
+    var circumference = 0.0
         private set
 
-    var field = 0.0
+    var area = 0.0
         private set
 
     fun calculateLength() {
-        length = 2 * pi * radius
+        circumference = 2 * pi * radius
     }
 
     fun calculateField() {
-        field = pi * radius * radius
+        area = pi * radius * radius
     }
 
 }
@@ -27,7 +27,7 @@ fun main() {
     c.calculateLength()
     c.calculateField()
 
-    println(c.length)
-    println(c.field)
+    println(c.circumference)
+    println(c.area)
 
 }
