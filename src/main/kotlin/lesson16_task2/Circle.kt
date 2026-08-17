@@ -1,6 +1,6 @@
 package org.example.lesson16_task2
 
-class Circle(var radius: Double) {
+class Circle(private val radius: Double) {
 
     private val pi = 3.14
 
@@ -23,6 +23,7 @@ class Circle(var radius: Double) {
 fun main() {
 
     val c = Circle(radius = 1.5)
+
     c.calculateLength()
     c.calculateField()
 
