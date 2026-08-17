@@ -1,7 +1,7 @@
 package org.example
 
 class Player(
-    val name: String,
+    private val name: String,
     private var health: Int,
     private var power: Int
 ) {
@@ -32,7 +32,8 @@ class Player(
 
 fun main() {
 
-    val player = Player(name = "X", health = 100, power = 10)
+    val player = Player("X", 100, 10)
+
     player.showInfo()
     player.damage(80)
     player.treatment(100)
