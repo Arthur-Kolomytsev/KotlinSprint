@@ -11,7 +11,7 @@ class Player(
         if (health <= 0) death()
     }
 
-    fun treatment(treatment: Int) {
+    fun recoverHealth(treatment: Int) {
         if (health > 0) health += treatment
     }
 
@@ -36,7 +36,7 @@ fun main() {
 
     player.showInfo()
     player.damage(80)
-    player.treatment(100)
+    player.recoverHealth(100)
     player.showInfo()
     player.damage(50)
     player.showInfo()
