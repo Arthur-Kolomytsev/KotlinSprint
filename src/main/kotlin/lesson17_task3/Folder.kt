@@ -3,7 +3,7 @@ package org.example.lesson17_task3
 class Folder (_name: String, _numberOfFiles: Int, private val isSecret: Boolean) {
 
     val name = _name
-        get() = if (isSecret) "Скрытая папка" else field
+        get() = if (isSecret) "cкрытая папка" else field
 
 
     val numberOfFiles = _numberOfFiles
