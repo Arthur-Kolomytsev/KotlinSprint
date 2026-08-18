@@ -2,13 +2,13 @@ package org.example.lesson17_task5
 
 class User(login: String, password: String) {
 
-    var login = login
+    var login: String = login
         set(value) {
             field = value
             println("Login successfully changed")
         }
 
-    var password = password
+    var password: String = password
         get() = "*".repeat(field.length)
         set(value) {
             println("Вы не можете изменить пароль")
