@@ -20,6 +20,7 @@ fun main() {
     val user = User(login = "user1234", password = "12345")
     println(user.login)
     println(user.password)
+    user.password = "054321"
     user.login = "USER"
     println(user.login)
 }
