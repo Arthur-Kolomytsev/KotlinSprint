@@ -1,16 +1,24 @@
 package org.example.lesson17_task1
 
-class Quiz(private val _question: String, private var _answer: String) {
+class Quiz(_question: String, _answer: String) {
 
-    val question: String
-        get() = _question
+    val question = _question
+        get() = field
 
-    var answer: String
+    var answer = _answer
         set(value) {
-            _answer = value
+            field = value
         }
-        get() = _answer
+        get() = field
 
+}
+
+fun main() {
+
+    val quiz = Quiz("Question", "Answer")
+
+    println(quiz.question)
+    println(quiz.answer)
 
 }
 
