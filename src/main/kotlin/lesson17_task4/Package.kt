@@ -5,7 +5,6 @@ class Package(val number: Int, _location: String) {
     var countOfMoving = 0
 
     var location = _location
-        get() = field
         set(value) {
             countOfMoving++
             field = value
