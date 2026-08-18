@@ -21,8 +21,8 @@ class Ship(_name: String, _averageSpeed: Int, _homePort: String) {
 fun main() {
 
     val ship = Ship("NAME-1", 10, "Portugal")
+    ship.name = "NAME-2"
     ship.showInfo()
-    ship.name = "NAME-1"
-    ship.showInfo()
+
 
 }
