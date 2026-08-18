@@ -17,6 +17,7 @@ class Ship(_name: String, _averageSpeed: Int, _homePort: String) {
 
 }
 
+
 fun main() {
 
     val ship = Ship("NAME-1", 10, "Portugal")
