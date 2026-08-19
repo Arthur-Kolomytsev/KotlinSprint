@@ -8,14 +8,14 @@ class Order(val number: Int) {
 
     fun addProducts(s: String) {
         nameOfProduct = s
-        println("Заказан товар: [$nameOfProduct]")
+        println("Заказан товар: $nameOfProduct")
     }
 
     fun addProducts(list: List<String>) {
         val l = list.toMutableList()
         products.addAll(l)
         print("Заказаны следующие товары: ")
-        println(products.joinToString(", ") { "[$it]" })
+        println(products.joinToString(", "))
     }
 }
 
