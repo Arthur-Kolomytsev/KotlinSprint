@@ -12,8 +12,7 @@ class Order(val number: Int) {
     }
 
     fun addProducts(list: List<String>) {
-        val l = list.toMutableList()
-        products.addAll(l)
+        products.addAll(list)
         print("Заказаны следующие товары: ")
         println(products.joinToString(", "))
     }
