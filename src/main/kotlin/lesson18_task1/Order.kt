@@ -8,15 +8,15 @@ class Order(val number: Int) {
 
     fun addProducts(s: String) {
         nameOfProduct = s
-        println("Order: [$nameOfProduct]")
+        println("Заказан товар: [$nameOfProduct]")
     }
 
     fun addProducts(list: List<String>) {
         val l = list.toMutableList()
         products.addAll(l)
-        println("Order: $products")
+        print("Заказаны следующие товары: ")
+        println(products.joinToString(", ") { "[$it]" })
     }
-
 }
 
 fun main() {
@@ -25,6 +25,6 @@ fun main() {
     val order2 = Order(2)
 
     order1.addProducts("Milk")
-    order2.addProducts(listOf("Milk", "Salt"))
+    order2.addProducts(listOf("Milk", "Salt", "Bred"))
 
 }
