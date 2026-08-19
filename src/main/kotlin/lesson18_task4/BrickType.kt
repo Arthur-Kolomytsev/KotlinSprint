@@ -8,6 +8,6 @@ class BrickType(
     ) : Package() {
 
     override fun getArea(): Double {
-        return 2 * (length*width + width*high + length*high)
+        return 2 * (length * width + width * high + length * high)
     }
 }
