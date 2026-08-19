@@ -7,7 +7,7 @@ open class Dice {
     open val numberOfFaces: Int = 0
 
     open fun rollDice() {
-        val n = Random.nextInt(0, numberOfFaces)
+        val n = Random.nextInt(1, numberOfFaces + 1)
         println(n)
     }
 
