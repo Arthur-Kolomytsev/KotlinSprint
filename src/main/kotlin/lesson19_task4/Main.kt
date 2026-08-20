@@ -16,21 +16,18 @@ class Tank {
 
     var damage: Int = 0
 
-
-    fun loadMissile(m: Missile) = when(m) {
-        Missile.BLUE -> damage = 5
-        Missile.GREEN -> damage = 10
-        Missile.RED -> damage = 20
+    fun loadMissile(m: Missile) {
+        damage = m.missileDamage
     }
 
-    fun fire(){
+    fun fire() {
         println("Damage = $damage")
     }
 
 }
 
-enum class Missile {
-    BLUE,
-    GREEN,
-    RED,
+enum class Missile(val missileDamage: Int) {
+    BLUE(5),
+    GREEN(10),
+    RED(20),
 }
