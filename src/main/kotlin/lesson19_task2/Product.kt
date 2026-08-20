@@ -7,7 +7,9 @@ class Product(
     ) {
 
     fun showProductInfo(){
-        println("Category of product: ${category.getCategory()}")
+        println("Product name: $name\n" +
+                "Product id: $id\n" +
+                "Product category: ${category.getCategory()}")
     }
 
 }
