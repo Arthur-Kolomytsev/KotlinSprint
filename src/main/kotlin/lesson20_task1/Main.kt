@@ -6,5 +6,4 @@ fun main() {
 
     println(greet("Art"))
 
-
 }
