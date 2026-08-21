@@ -7,7 +7,7 @@ fun main() {
     val clickList = list1.map { { println("Нажат элемент $it") } }
 
     clickList.forEachIndexed { index, function ->
-        if (index % 2 == 0) {
+        if ((index + 1) % 2 == 0) {
             function()
         }
     }
