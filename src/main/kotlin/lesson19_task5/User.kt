@@ -9,7 +9,7 @@ class User private constructor(val name: String, val gender: Gender) {
     companion object {
 
         fun createUser(name: String, gender: String): User {
-            val gender = if (gender == "man") Gender.MAN else if (gender == "woman") Gender.WOMAN else Gender.UNKNOWN
+            val gender = if (gender.uppercase() == "MAN") Gender.MAN else if (gender.uppercase() == "WOMAN") Gender.WOMAN else Gender.UNKNOWN
             return User(name, gender)
 
         }
@@ -22,7 +22,7 @@ fun main() {
 
     val users = mutableListOf<User>()
 
-    println("Enter users name (Name) ang gender (man / woman)\n")
+    println("Enter users name (Name) and gender (man / woman)\n")
 
     do {
 
