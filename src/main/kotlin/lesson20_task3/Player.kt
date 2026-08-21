@@ -5,6 +5,6 @@ class Player(val hasKey: Boolean)
 
 fun main() {
 
-    val chekKey: (Player) -> String = { if (it.hasKey) "Игрок открыл дверь" else "Дверь заперта" }
+    val checkKey: (Player) -> String = { if (it.hasKey) "Игрок открыл дверь" else "Дверь заперта" }
 
 }
