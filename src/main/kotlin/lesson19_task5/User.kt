@@ -22,7 +22,10 @@ fun main() {
 
     val users = mutableListOf<User>()
 
+    println("Enter users name (Name) ang gender (man / woman)\n")
+
     do {
+
         print("Please enter user name: ")
         val userName = readln()
 
@@ -32,15 +35,12 @@ fun main() {
         val u = User.createUser(userName, userGender)
         users.add(u)
 
-        if (users.size == 2) {
+        if (users.size == 5) {
             println(users.joinToString(", "))
             break
         }
 
     } while (true)
-
-
-
 
 }
 
