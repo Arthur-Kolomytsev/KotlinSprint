@@ -1,13 +1,8 @@
 package org.example.lesson21_task1
 
 fun String.vowelCount(): Int {
-    val listOfVowels = listOf('a', 'e', 'i', 'o', 'u', 'y')
-    var count: Int = 0
-
-    this.toCharArray().forEach { if (it in listOfVowels) count++ }
-
-    return count
-
+    val vowels = listOf('a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U')
+    return count {it in vowels}
 }
 
 fun main() {
