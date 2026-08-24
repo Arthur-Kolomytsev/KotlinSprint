@@ -11,7 +11,6 @@ fun main() {
 
     robot.say()
 
-
 }
 
 
@@ -25,15 +24,15 @@ class Robot {
         "lll aaa ggg bbb"
     )
 
-    var MyModifier: (String) -> String = { it }
+    var myModifier: (String) -> String = { it }
 
     fun say() {
         val phrase = phrases.random()
-        println(MyModifier(phrase))
+        println(myModifier(phrase))
     }
 
     fun setModifier(mod: (String) -> String) {
-        MyModifier = mod
+        myModifier = mod
     }
 }
 
