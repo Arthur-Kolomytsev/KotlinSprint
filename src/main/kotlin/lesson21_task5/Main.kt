@@ -14,6 +14,5 @@ fun main() {
 }
 
 fun Map<String, Int>.maxCategory(): String? {
-    val max = maxByOrNull { it.value }
-    return max?.key
+    return maxByOrNull { it.value }?.key
 }
