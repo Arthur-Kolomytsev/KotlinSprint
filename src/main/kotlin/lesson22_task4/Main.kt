@@ -14,7 +14,7 @@ class MainScreenViewModel(
     fun loadData() {
         mainScreenState = mainScreenState.copy(data = "")
         mainScreenState = mainScreenState.copy(isLoading = true)
-        mainScreenState = mainScreenState.copy(data = "loaded data")
+        mainScreenState = mainScreenState.copy(data = "loaded data", isLoading = false)
     }
 
 }
