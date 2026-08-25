@@ -5,14 +5,17 @@ fun main() {
 }
 
 
-data class MainScreenState(val data: String, val isLoading: Boolean = false)
+class MainScreenViewModel(
+    private var mainScreenState: MainScreenState = MainScreenState(data = "")
+) {
 
-
-class MainScreenViewModel(val mainScreenState: MainScreenState) {
+    data class MainScreenState(val data: String, val isLoading: Boolean = false)
 
     fun loadData() {
-        val state1 = mainScreenState.copy(data = "")
-        val state2 = mainScreenState.copy(data = "", isLoading = true)
-        val state3 = mainScreenState.copy(data = "loaded data")
+        mainScreenState = mainScreenState.copy(data = "")
+        mainScreenState = mainScreenState.copy(isLoading = true)
+        mainScreenState = mainScreenState.copy(data = "loaded data")
     }
+
 }
+
